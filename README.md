@@ -1,14 +1,10 @@
-**📊DATA PROCESSING CHALLENGE**                                                         
+📊**Data Processing Techniques**
 
-This project is done for the Data Processing Challenge, which includes four main tasks:
+📘 Overview
 
-1.Data Preprocessing
+This project was developed as part of the Data Processing Challenge. It demonstrates various techniques and frameworks for handling large-scale and real-time data efficiently.
 
-2.Real-Time Data Streaming
-
-3.Incremental Data Processing (CDC)
-
-4.In-Memory Data Processing
+The project is divided into four main tasks, each focusing on a different data processing approach using Apache Spark, Apache Kafka, and Python.
 
 **Tools and Technologies:**
 
@@ -20,23 +16,23 @@ Python for building the data processing logic and machine learning models.
 
 Jupyter Notebooks or Python scripts for submissions.
 
-**Task 1: Data Preprocessing** 
+🚀 Tasks Overview
+🧩 Task 1: Data Preprocessing
 
-**Goal:**
+Goal: Clean and preprocess raw datasets using Spark.
+Key Steps:
 
-To clean and preprocess the dataset using Spark.
+Handle missing values
 
-The steps include:
+Remove duplicates
 
-1.Handling missing values
+Fix data type inconsistencies
 
-2.Removing duplicates
+Normalize and transform data
 
-3.Fixing data types
+Export the cleaned data for downstream processing
 
-4.Normalization / standardization
-
-5.Feature engineering (adding new columns)
+📁 Folder: data_preprocessing/
 
 **How to run:**
 python preprocessing/spark_preprocessing.py
@@ -152,48 +148,24 @@ Each task runs independently
 
 **📁Folder Structure**:
 
-data_processing/
-
-├── data/
-
-│   ├── raw/
-
-│   │   └── marketing_campaign.csv   
-
-│   └── processed/                    
-
+Data_Processing/
 │
-
-├── preprocessing/   
-
-│   ├── setup.sh
-
-│   └── spark_preprocessing.py
-
+├── data_preprocessing/
+│   ├── scripts/
+│   └── output/
 │
-
-├── realtime_streaming/              
-
+├── realtime_streaming/
 │   ├── kafka_producer.py
-
-│   └── kafka_consumer.py
-
+│   ├── spark_streaming.py
+│   └── images/
 │
-
-├── incremental/                    
-
-│   ├── kafka_cdc_producer.py
-
-│   └── kafka_cdc_consumer.py
-
+├── incremental_processing/
+│   ├── cdc_script.py
+│   └── logs/
 │
-
-├── in_memory/                      
-
-│   └── in_memory_processing.py
-
+├── in_memory_processing/
+│   ├── in_memory_analysis.py
+│   └── results/
 │
-
-├── requirements.txt                 
-
-└── README.md                        
+└── README.md
+                  
