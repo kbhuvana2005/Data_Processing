@@ -1,7 +1,7 @@
 🧠 Data Processing Techniques – Task Details
-
+---
 This document provides a detailed overview of the four tasks performed in the Data Processing Challenge using Python, Apache Spark, and Apache Kafka.
-
+---
 **⚡ Task 1: Data Preprocessing 🧹**
 
 **🎯 Goal:**
@@ -24,6 +24,7 @@ Clean and prepare the dataset for analysis or modeling.
 **🏁 Result:**
 Cleaned and processed dataset ready for downstream tasks.
 
+---
 
 **⚡ Task 2: Real-Time Data Streaming 📡**
 
@@ -43,6 +44,7 @@ Stream data in real-time using Kafka.
 **🏁 Result:**
 Simulated real-time data flow with processing in Python.
 
+----
 
 **⚡ Task 3: Incremental Data Processing (CDC) 🔄**
 
@@ -64,6 +66,8 @@ Incremental data processing demonstrated without reprocessing full datasets.
 
 **⚡ Task 4: In-Memory Data Processing ⚡**
 
+---
+
 **🎯 Goal:**
 Process large datasets efficiently using Spark’s in-memory computation.
 
@@ -79,5 +83,6 @@ Process large datasets efficiently using Spark’s in-memory computation.
 
 **🏁 Result:**
 Fast, efficient data analysis demonstrating Spark’s in-memory capabilities.
+
 
 
