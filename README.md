@@ -73,7 +73,7 @@ scikit-learn
 python preprocessing/spark_preprocessing.py
 ```
 
-**Output:** `data/processed/`
+
 
 ---
 
@@ -125,7 +125,6 @@ python incremental/kafka_cdc_producer.py
 python incremental/kafka_cdc_consumer.py
 ```
 
-**Note:** `.pkl` model files are generated automatically and **should not be uploaded to GitHub**.
 
 ---
 
@@ -176,7 +175,7 @@ data_processing/
 
 * Paths can be modified based on your local setup
 * Each task runs independently
-* `.pkl` and output data files are not included in the repository
+
 
 ---
 
