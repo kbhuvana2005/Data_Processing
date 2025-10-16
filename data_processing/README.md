@@ -1,7 +1,10 @@
 🧠 Data Processing Techniques – Task Details
 ---
 This document provides a detailed overview of the four tasks performed in the Data Processing Challenge using Python, Apache Spark, and Apache Kafka.
+
 ---
+
+
 **⚡ Task 1: Data Preprocessing 🧹**
 
 **🎯 Goal:**
@@ -83,6 +86,7 @@ Process large datasets efficiently using Spark’s in-memory computation.
 
 **🏁 Result:**
 Fast, efficient data analysis demonstrating Spark’s in-memory capabilities.
+
 
 
 
