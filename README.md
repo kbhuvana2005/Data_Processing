@@ -1,10 +1,13 @@
 **DATA PROCESSING CHALLENGE**                                                         
 
 This project is done for the Data Processing Challenge, which includes four main tasks:
+
 1.Data Preprocessing
 
 2.Real-Time Data Streaming
+
 3.Incremental Data Processing (CDC)
+
 4.In-Memory Data Processing
 
 All tasks are done using Apache Spark, Apache Kafka, and Python.
