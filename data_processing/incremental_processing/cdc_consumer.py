@@ -9,6 +9,7 @@ consumer = KafkaConsumer(
 )
 
 # Load or create the dataset
+
 if os.path.exists("customer_data.csv"):
     df = pd.read_csv("customer_data.csv")
 else:
