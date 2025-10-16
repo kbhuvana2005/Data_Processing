@@ -113,9 +113,9 @@ Each task runs independently
 **📁Folder Structure**:
 
 data_processing/
-|
-│
+
 ├── data/
+
 │   ├── raw/
 
 │   │   └── marketing_campaign.csv
