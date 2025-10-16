@@ -150,13 +150,13 @@ data_processing/
 
 │   ├── raw/
 
-│   │   └── marketing_campaign.csv
+│   │   └── marketing_campaign.csv    # Original datasets
 
-│   └── processed/
+│   └── processed/                    # Cleaned / processed data
 
 │
 
-├── preprocessing/
+├── preprocessing/                   # Scripts for preprocessing data
 
 │   ├── setup.sh
 
@@ -164,7 +164,7 @@ data_processing/
 
 │
 
-├── realtime_streaming/
+├── realtime_streaming/              # Real-time Kafka producer/consumer scripts
 
 │   ├── kafka_producer.py
 
@@ -172,7 +172,7 @@ data_processing/
 
 │
 
-├── incremental/
+├── incremental/                     # Incremental streaming with Kafka CDC
 
 │   ├── kafka_cdc_producer.py
 
@@ -180,12 +180,12 @@ data_processing/
 
 │
 
-├── in_memory/
+├── in_memory/                       # In-memory data processing scripts
 
 │   └── in_memory_processing.py
 
 │
 
-├── requirements.txt
+├── requirements.txt                  # Python dependencies
 
-└── README.md
+└── README.md                         # Project overview and instructions
