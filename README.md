@@ -111,27 +111,51 @@ Paths can be modified based on your local setup
 Each task runs independently
 
 **📁Folder Structure**:
+
 data_processing/
+
 │
+
 ├── data/
+
 │   ├── raw/
+
 │   │   └── marketing_campaign.csv
+
 │   └── processed/
+
 │
+
 ├── preprocessing/
+
 │   ├── setup.sh
+
 │   └── spark_preprocessing.py
+
 │
+
 ├── realtime_streaming/
+
 │   ├── kafka_producer.py
+
 │   └── kafka_consumer.py
+
 │
+
 ├── incremental/
+
 │   ├── kafka_cdc_producer.py
+
 │   └── kafka_cdc_consumer.py
+
 │
+
 ├── in_memory/
+
 │   └── in_memory_processing.py
+
 │
+
 ├── requirements.txt
+
 └── README.md
