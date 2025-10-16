@@ -10,7 +10,15 @@ This project is done for the Data Processing Challenge, which includes four main
 
 4.In-Memory Data Processing
 
-All tasks are done using Apache Spark, Apache Kafka, and Python.
+**Tools and Technologies:**
+
+Apache Kafka for real-time data streaming and message handling.
+
+Apache Flink or Spark for stream processing and in-memory computing.
+
+Python for building the data processing logic and machine learning models.
+
+Jupyter Notebooks or Python scripts for submissions.
 
 **Task 1: Data Preprocessing** 
 
