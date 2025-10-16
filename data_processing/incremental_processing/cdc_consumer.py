@@ -14,11 +14,11 @@ if os.path.exists("customer_data.csv"):
 else:
     df = pd.DataFrame(columns=["customer_id", "income", "spending_score", "event_time"])
 
-print("📡 Listening for CDC events...")
+print("Listening for CDC events...")
 
 for message in consumer:
     event = message.value
-    print("📥 Received CDC Event:", event)
+    print(" Received CDC Event:", event)
 
     # Update or insert record
     if event['customer_id'] in df['customer_id'].values:
