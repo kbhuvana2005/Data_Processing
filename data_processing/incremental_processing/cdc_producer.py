@@ -10,6 +10,7 @@ print("CDC Producer started... Sending simulated updates to Kafka.")
 
 while True:
     # Simulate a CDC event (like a customer update)
+    
     update_event = {
         "customer_id": random.randint(1000, 2000),
         "new_income": random.randint(50000, 150000),
