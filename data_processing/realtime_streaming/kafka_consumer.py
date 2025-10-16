@@ -12,7 +12,7 @@ consumer = KafkaConsumer(
     value_deserializer=lambda v: json.loads(v.decode('utf-8'))
 )
 
-print("📡 Listening for data...")
+print("Listening for data...")
 
 # Prepare ML model (Temperature → Humidity)
 model = LinearRegression()
@@ -29,6 +29,7 @@ for msg in consumer:
     temp = np.array([[data["temperature"]]])
     pred_humidity = model.predict(temp)[0]
     print(f"Received: {data} → Predicted Humidity: {pred_humidity:.2f}")
+
 
 
 
