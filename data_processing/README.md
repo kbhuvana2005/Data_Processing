@@ -1,133 +1,67 @@
-DATA PROCESSING TECHNIQUES
+⚡ Task 1: Data Preprocessing
 
-This project is done for the Data Processing Challenge, which includes four main tasks:
-Data Preprocessing
-Real-Time Data Streaming
-Incremental Data Processing (CDC)
-In-Memory Data Processing
+Goal: Clean and prepare the dataset for analysis or modeling.
 
-All tasks are done using Apache Spark, Apache Kafka, and Python.
+Steps Done:
 
-Task 1: Data Preprocessing 
+Loaded the dataset using Spark.
 
-Goal:
-To clean and preprocess the dataset using Spark.
+Handled missing values by filling them appropriately.
 
-The steps include:
-Handling missing values
-Removing duplicates
-Fixing data types
-Normalization / standardization
-Feature engineering (adding new columns)
+Removed duplicate records to ensure data quality.
 
-How to run:
-python preprocessing/spark_preprocessing.py
+Corrected column data types for consistency.
 
-Output location:
-data/processed/
+Standardized and normalized numeric features.
 
-Task 2: Real-Time Data Streaming 
+Created new features to enhance analysis, like total customer spend or tenure.
 
-Goal:
-To create a Kafka Producer–Consumer setup that streams data in real time and performs basic processing.
+Result: Cleaned and processed dataset ready for downstream tasks.
 
-Steps to run:
+⚡ Task 2: Real-Time Data Streaming
 
-Start Zookeeper:
-bin/zookeeper-server-start.sh config/zookeeper.properties
+Goal: Stream data in real-time using Kafka.
 
-Start Kafka Server:
-bin/kafka-server-start.sh config/server.properties
+Steps Done:
 
-Create a topic:
-bin/kafka-topics.sh --create --topic sensor_data --bootstrap-server localhost:9092
+Configured and started Zookeeper and Kafka server.
 
-Run Producer:
-python realtime_streaming/kafka_producer.py
+Created a Kafka topic for streaming sensor/customer data.
 
-Run Consumer:
-python realtime_streaming/kafka_consumer.py
+Implemented a Producer that sends data continuously to Kafka.
 
+Implemented a Consumer that receives data from Kafka and performs basic processing (filtering, transformations, logging).
 
-Task 3: Incremental Data Processing 
+Result: Real-time data flow simulation with processing in Python.
 
-Goal:
-To simulate Change Data Capture (CDC) where the model updates automatically when new data arrives.
+⚡ Task 3: Incremental Data Processing (CDC)
 
-Steps to run:
+Goal: Update data or models automatically as new information arrives.
 
-Start Zookeeper:
-bin/zookeeper-server-start.sh config/zookeeper.properties
+Steps Done:
 
+Set up Kafka topic for customer updates.
 
-Start Kafka Server:
-bin/kafka-server-start.sh config/server.properties
+Producer sends new or updated customer records to Kafka.
 
+Consumer listens to updates and applies changes incrementally.
 
-Create topic:
-bin/kafka-topics.sh --create --topic customer_updates --bootstrap-server localhost:9092
+Automatically updates the model and stores it as a .pkl file (not included in repo).
 
-Run Producer:
-python incremental/kafka_cdc_producer.py
+Result: Demonstrated incremental data processing without reprocessing full datasets.
 
-Run Consumer:
-python incremental/kafka_cdc_consumer.py
+⚡ Task 4: In-Memory Data Processing
 
-Note:
-The .pkl model file will be created automatically when the consumer runs.
-It should not be uploaded to GitHub.
+Goal: Efficiently process large datasets using Spark’s in-memory computation.
 
+Steps Done:
 
-Task 4: In-Memory Data Processing
+Loaded the processed dataset into Spark DataFrame.
 
-Goal:
-To use Apache Spark’s in-memory processing to analyze large datasets efficiently and show improved performance.
+Cached data in memory to improve performance for repeated operations.
 
-How to run:
-python in_memory/in_memory_processing.py
+Performed aggregations, filtering, and transformations.
 
-Requirements
+Compared in-memory operations vs disk-based processing to show performance improvement.
 
-Install all dependencies before running:
-pip install -r requirements.txt
-
-Install and configure Spark
-
-requirements.txt
-pyspark
-kafka-python
-pandas
-numpy
-scikit-learn
-
-Notes:
-Dataset used: marketing_campaign.csv from Kaggle
-Paths can be modified based on your local setup
-.pkl or output data files are not included in the repository
-Each task runs independently
-
-Folder Structure:
-data_processing/
-│
-├── data/
-│   ├── raw/
-│   │   └── marketing_campaign.csv
-│   └── processed/
-│
-├── preprocessing/
-│   ├── setup.sh
-│   └── spark_preprocessing.py
-│
-├── realtime_streaming/
-│   ├── kafka_producer.py
-│   └── kafka_consumer.py
-│
-├── incremental/
-│   ├── kafka_cdc_producer.py
-│   └── kafka_cdc_consumer.py
-│
-├── in_memory/
-│   └── in_memory_processing.py
-│
-├── requirements.txt
-└── README.md
+Result: Fast, efficient data analysis demonstrating Spark’s in-memory capabilities.
