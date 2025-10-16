@@ -2,13 +2,13 @@
 
 This document provides a detailed overview of the four tasks performed in the Data Processing Challenge using Python, Apache Spark, and Apache Kafka.
 
-⚡ Task 1: Data Preprocessing 🧹
+**⚡ Task 1: Data Preprocessing 🧹**
 
-🎯 Goal:
+**🎯 Goal:**
 Clean and prepare the dataset for analysis or modeling.
 
-✅ Steps Done:
-
+**✅ Steps Done:
+**
 📥 Loaded the dataset using Spark.
 
 🧩 Handled missing values appropriately.
@@ -21,15 +21,15 @@ Clean and prepare the dataset for analysis or modeling.
 
 ✨ Created new features, e.g., total customer spend or tenure.
 
-🏁 Result:
+**🏁 Result:**
 Cleaned and processed dataset ready for downstream tasks.
 
-⚡ Task 2: Real-Time Data Streaming 📡
+**⚡ Task 2: Real-Time Data Streaming 📡**
 
-🎯 Goal:
+**🎯 Goal:**
 Stream data in real-time using Kafka.
 
-✅ Steps Done:
+**✅ Steps Done:**
 
 ⚙ Configured and started Zookeeper and Kafka server.
 
@@ -39,15 +39,15 @@ Stream data in real-time using Kafka.
 
 📡 Implemented a Consumer to receive data and perform basic processing (filtering, transformations, logging).
 
-🏁 Result:
+**🏁 Result:**
 Simulated real-time data flow with processing in Python.
 
-⚡ Task 3: Incremental Data Processing (CDC) 🔄
+**⚡ Task 3: Incremental Data Processing (CDC) 🔄**
 
-🎯 Goal:
+**🎯 Goal:**
 Automatically update data or models as new information arrives.
 
-✅ Steps Done:
+**✅ Steps Done:**
 
 🏷 Set up Kafka topic for customer updates.
 
@@ -57,15 +57,15 @@ Automatically update data or models as new information arrives.
 
 💾 Automatically updates the model and stores it as a .pkl file (not included in repo).
 
-🏁 Result:
+**🏁 Result:**
 Incremental data processing demonstrated without reprocessing full datasets.
 
-⚡ Task 4: In-Memory Data Processing ⚡
+**⚡ Task 4: In-Memory Data Processing ⚡**
 
-🎯 Goal:
+**🎯 Goal:**
 Process large datasets efficiently using Spark’s in-memory computation.
 
-✅ Steps Done:
+**✅ Steps Done:**
 
 📥 Loaded the processed dataset into Spark DataFrame.
 
@@ -75,5 +75,6 @@ Process large datasets efficiently using Spark’s in-memory computation.
 
 ⏱ Compared in-memory operations vs disk-based processing to show speed improvement.
 
-🏁 Result:
+**🏁 Result:**
 Fast, efficient data analysis demonstrating Spark’s in-memory capabilities.
+
