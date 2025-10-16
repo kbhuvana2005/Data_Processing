@@ -1,67 +1,79 @@
-⚡ Task 1: Data Preprocessing
+🧠 Data Processing Techniques – Task Details
 
-Goal: Clean and prepare the dataset for analysis or modeling.
+This document provides a detailed overview of the four tasks performed in the Data Processing Challenge using Python, Apache Spark, and Apache Kafka.
 
-Steps Done:
+⚡ Task 1: Data Preprocessing 🧹
 
-Loaded the dataset using Spark.
+🎯 Goal:
+Clean and prepare the dataset for analysis or modeling.
 
-Handled missing values by filling them appropriately.
+✅ Steps Done:
 
-Removed duplicate records to ensure data quality.
+📥 Loaded the dataset using Spark.
 
-Corrected column data types for consistency.
+🧩 Handled missing values appropriately.
 
-Standardized and normalized numeric features.
+🗑 Removed duplicate records to ensure data quality.
 
-Created new features to enhance analysis, like total customer spend or tenure.
+📝 Corrected column data types for consistency.
 
-Result: Cleaned and processed dataset ready for downstream tasks.
+⚖ Standardized and normalized numeric features.
 
-⚡ Task 2: Real-Time Data Streaming
+✨ Created new features, e.g., total customer spend or tenure.
 
-Goal: Stream data in real-time using Kafka.
+🏁 Result:
+Cleaned and processed dataset ready for downstream tasks.
 
-Steps Done:
+⚡ Task 2: Real-Time Data Streaming 📡
 
-Configured and started Zookeeper and Kafka server.
+🎯 Goal:
+Stream data in real-time using Kafka.
 
-Created a Kafka topic for streaming sensor/customer data.
+✅ Steps Done:
 
-Implemented a Producer that sends data continuously to Kafka.
+⚙ Configured and started Zookeeper and Kafka server.
 
-Implemented a Consumer that receives data from Kafka and performs basic processing (filtering, transformations, logging).
+🏷 Created a Kafka topic for streaming sensor/customer data.
 
-Result: Real-time data flow simulation with processing in Python.
+🚀 Implemented a Producer to continuously send data to Kafka.
 
-⚡ Task 3: Incremental Data Processing (CDC)
+📡 Implemented a Consumer to receive data and perform basic processing (filtering, transformations, logging).
 
-Goal: Update data or models automatically as new information arrives.
+🏁 Result:
+Simulated real-time data flow with processing in Python.
 
-Steps Done:
+⚡ Task 3: Incremental Data Processing (CDC) 🔄
 
-Set up Kafka topic for customer updates.
+🎯 Goal:
+Automatically update data or models as new information arrives.
 
-Producer sends new or updated customer records to Kafka.
+✅ Steps Done:
 
-Consumer listens to updates and applies changes incrementally.
+🏷 Set up Kafka topic for customer updates.
 
-Automatically updates the model and stores it as a .pkl file (not included in repo).
+🚀 Producer sends new or updated customer records to Kafka.
 
-Result: Demonstrated incremental data processing without reprocessing full datasets.
+📡 Consumer listens to updates and applies changes incrementally.
 
-⚡ Task 4: In-Memory Data Processing
+💾 Automatically updates the model and stores it as a .pkl file (not included in repo).
 
-Goal: Efficiently process large datasets using Spark’s in-memory computation.
+🏁 Result:
+Incremental data processing demonstrated without reprocessing full datasets.
 
-Steps Done:
+⚡ Task 4: In-Memory Data Processing ⚡
 
-Loaded the processed dataset into Spark DataFrame.
+🎯 Goal:
+Process large datasets efficiently using Spark’s in-memory computation.
 
-Cached data in memory to improve performance for repeated operations.
+✅ Steps Done:
 
-Performed aggregations, filtering, and transformations.
+📥 Loaded the processed dataset into Spark DataFrame.
 
-Compared in-memory operations vs disk-based processing to show performance improvement.
+🧠 Cached data in memory for improved performance.
 
-Result: Fast, efficient data analysis demonstrating Spark’s in-memory capabilities.
+🔄 Performed aggregations, filtering, and transformations.
+
+⏱ Compared in-memory operations vs disk-based processing to show speed improvement.
+
+🏁 Result:
+Fast, efficient data analysis demonstrating Spark’s in-memory capabilities.
